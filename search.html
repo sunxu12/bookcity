@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1'>
+    <meta name='format-detection' content='telphone=no, email=no' />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/search.css">
+</head>
+
+<body>
+    <div class="search-wrap">
+        <div class="search">
+            <div class="top">
+                <a href="javascript:history.back()" class="top_back"></a>
+                <div id="search_input" class="search-input">
+                    <b class="search-input_mi"></b>
+                    <input type="text" placeholder="输入书名/作者/关键字">
+                    <div class="search-input_btn" id="Tag_170">搜索</div>
+                </div>
+            </div>
+            <div id="Tag_2" class="top_bd">
+                <div id="Tag_3">
+                    <ul class="m-tag search-tag">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script id="listTags" type="text/x-handlebars-template">
+        {{#each ads}} {{#if status}}
+        <li>{{ad_name}}</li>{{else}}
+        <li class="activeli">{{ad_name}}</li>
+        {{/if}} {{/each}}
+    </script>
+</body>
+<script src="js/lib/require.js"></script>
+<script src="js/page/main.js"></script>
+<script>
+    require(['search'])
+</script>
+<script>
+    document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + 'px'
+</script>
+
+</html>

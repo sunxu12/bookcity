@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+  font-size: 0.32rem;
+  overflow: hidden;
+}
+.main_box {
+  width: 100%;
+  height: 100%;
+  padding: 0 0.7rem;
+  box-sizing: border-box;
+}
+.main_box .header {
+  height: 3rem;
+  padding-top: 1rem;
+  box-sizing: border-box;
+}
+.main_box .header h1 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 0.4rem;
+}
+.main_box .header .milogo {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0 auto 0.2rem;
+  display: block;
+  background: url('https://account.xiaomi.com/static/res/11eb7d1/account-static/respassport/acc-2014/img/2018/milogo.png') no-repeat center center;
+  background-size: 100%;
+  border-radius: 0.1rem;
+}
+.login_area {
+  width: 100%;
+  height: 100%;
+}
+.login_area form {
+  padding-top: 0.3rem;
+  box-sizing: border-box;
+}
+.login_area form input {
+  width: 100%;
+  height: 1.5rem;
+  border: none;
+  line-height: 1.5rem;
+  border-bottom: 1px solid #ccc;
+}
+.login_area form #loginBtn {
+  width: 100%;
+  height: 1.2rem;
+  background: orangered;
+  line-height: 1.2rem;
+  border-radius: 0.2rem;
+  margin-top: 0.5rem;
+  color: #fff;
+  border: none;
+}
+.login_area form .tip {
+  width: 100%;
+  line-height: 0.2rem;
+  color: red;
+  margin: 0.3rem 0;
+}

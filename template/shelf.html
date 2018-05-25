@@ -1,0 +1,16 @@
+<ul class="list-girllove list-boylove shelf-list">
+    {{#each data.data}}
+    <li>
+        <a href="#">
+            <dl>
+                <dt><img src="{{cover}}" alt=""></dt>
+                <dd>
+                    <h3>{{title}}</h3>
+                    <p>{{authors}}</p>
+                    <p>{{latest}}</p>
+                </dd>
+            </dl>
+        </a>
+    </li>
+    {{/each}}
+</ul>

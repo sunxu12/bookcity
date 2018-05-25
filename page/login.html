@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1'>
+    <meta name='format-detection' content='telphone=no, email=no' />
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="main_box">
+            <header class="header">
+                <em class="milogo"></em>
+                <h1>小米账号登录</h1>
+            </header>
+            <div class="login_area">
+                <form>
+                    <input type="text" id="user" placeholder="邮箱/手机号码/小米ID">
+                    <input type="password" id="pwd" placeholder="密码">
+                    <p class="tip"></p>
+                    <button id="loginBtn" type="button">登录</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <script src="../js/lib/require.js">
+    </script>
+    <script>
+        require(['../js/main'], function() {
+            require(['login']);
+        })
+    </script>
+</body>
+
+</html>

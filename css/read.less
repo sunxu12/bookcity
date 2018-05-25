@@ -1,0 +1,291 @@
+*{
+padding:0;
+margin:0;
+list-style: none;
+}
+html,body,.wrap{
+    width:100%;
+    height:100%;
+    font-size:0.32rem;
+}
+
+.reader, .reader__bd {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+.reader__back {
+    float: left;
+    margin: 0.24rem 0.20rem 0;
+    width: 0.5rem;
+    height:0.5rem;
+    background: url('http://dushu.xiaomi.com/@EaSXPML.png') no-repeat;
+    background-size: 100%;
+}
+.reader__more {
+    float: right;
+    width:0.5rem;
+    height:0.5rem;
+    margin-right: 0.3rem;
+    margin-top: 0.4rem;
+}
+.reader__more:before {
+    content: '';
+    display: block;
+    width: 0.5rem;
+    height: 0.6rem;
+    background: url("http://dushu.xiaomi.com/3o66jDFr.png") no-repeat;
+    background-size: contain;
+}
+.reader__mask {
+    top: 0;
+    bottom: 0;
+    background: none;
+}
+
+.reader_op .reader__hd, .reader_op .reader__ft, .reader_op .reader__mask, .reader_op-font .reader__font {
+    display: block;
+}
+
+.reader__hd, .reader__ft, .reader__mask, .reader__font {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+a, button {
+    cursor: pointer;
+}
+.reader__ft {
+    bottom: 0;
+}
+
+.reader__ft-bar {
+    overflow: hidden;
+    border-bottom: 1px solid #333;
+}
+.reader__ft-bar a {
+    float: left;
+    display: block;
+    width: 25%;
+    font-size: 13px;
+    line-height: 48px;
+    height: 48px;
+    color: #fff;
+    text-align: center;
+}
+.reader__ft-bar a:nth-child(2) {
+    width: 50%;
+}
+
+.reader__ft a {
+    float: left;
+    width: 25%;
+    height: 70px;
+    font-size: 10px;
+    line-height: 21px;
+    color: #fff;
+    text-align: center;
+}
+a.reader__ft-toc:before {
+    margin-bottom: 9px;
+    width: 18px;
+    height: 13px;
+    background: url("http://dushu.xiaomi.com/0wcW9@C9.png") no-repeat;
+    background-size: 18px 13px;
+}
+.reader__ft a:before {
+    content: '';
+    display: block;
+    margin: 18px auto 0;
+}
+.reader__ft-toc:after {
+    content: '\76ee\5f55';
+}
+.reader__font {
+    bottom: 70px;
+    height: 135px;
+}
+.reader__ft-font:after {
+    content: '\5b57\4f53';
+}
+a.reader__ft-font:before {
+    margin-bottom: 9px;
+    width: 20px;
+    height: 13px;
+    background: url("http://dushu.xiaomi.com/sZwk5ja6.png") no-repeat;
+    background-size: 20px 13px;
+}
+
+.reader__ft a:before {
+    content: '';
+    display: block;
+    margin: 18px auto 0;
+}
+a.reader__ft-night:before {
+    margin-bottom: 6px;
+    width: 16px;
+    height: 16px;
+    background: url("http://dushu.xiaomi.com/vEo70Tka.png") no-repeat;
+    background-size: 16px 16px;
+}
+.reader__ft a:before {
+    content: '';
+    display: block;
+    margin: 18px auto 0;
+}
+.reader[data-night="0"] .reader__ft-night:after {
+    content: '\591c\95f4';
+}
+.reader__ft-night:after {
+    content: '\767d\5929';
+}
+a.reader__ft-download:before {
+    margin-bottom: 5px;
+    width: 22px;
+    height: 17px;
+    background: url("http://dushu.xiaomi.com/kgwIyM3V.png") no-repeat;
+    background-size: 22px 17px;
+}
+.reader__ft a:before {
+    content: '';
+    display: block;
+    margin: 18px auto 0;
+}
+.reader__font > div {
+    margin-top: 15px;
+    padding: 5px 10px;
+}
+.reader__font span {
+    margin: 0 20px 0 10px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+}
+.reader__font-size a {
+    display: inline-block;
+    margin: 0 5px;
+    border: 1px solid #8c8c8c;
+    border-radius: 16px;
+    padding: 5px 40px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #fff;
+}
+
+.reader__font > div {
+    margin-top: 15px;
+    padding: 5px 10px;
+}
+.reader__font-bg a[data-bg="1"] {
+    background: #f7eee5;
+}
+.reader__font-bg a {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background: #fff;
+}
+.reader__font-bg a:after {
+    content: '';
+    display: none;
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #ff7800;
+    border-radius: 16px;
+}
+.reader[data-bg="1"] .reader__bd {
+    background: #f7eee5;
+}
+.reader__bd {
+    margin: 0 auto;
+    padding: 15px 0;
+    max-width: 900px;
+    font-size: 16px;
+    color: #333;
+    overflow: auto;
+    background: #e9dfc7;
+    z-index: 1;
+}
+.reader, .reader__bd {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.reader__chapter>li:last-child {
+    padding-bottom: 0;
+}
+.reader__content {
+    margin: 0 15px;
+}
+.reader__bd h1 {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #736357;
+    font-size: 20px;
+    line-height: 31px;
+    color: #736357;
+    letter-spacing: 2px;
+}
+.reader__chapter p {
+    text-indent: 2em;
+    margin: 0.5em 0;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: 24px;
+    overflow: hidden;
+}
+.reader__ad {
+    background-color: #f7e6d9;
+    padding: 15px;
+    position: relative;
+    margin-top: 50px;
+    overflow: hidden;
+}
+.reader__close {
+    position: absolute;
+    right: -4rem;
+    top: -4rem;
+    padding: 4rem;
+}
+.reader__hd, .reader__ft, .reader__mask, .reader__font {
+    display:block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+}
+.reader__hd {
+    width:100%;
+    top: 0;
+    height: 1rem;
+    font-size: 0.32rem;
+    line-height: 1rem;
+    color: #d5d5d6;
+    background: pink;
+}
